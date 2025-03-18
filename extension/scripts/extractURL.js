@@ -18,11 +18,11 @@ button.addEventListener('click', function () {
     if(oldListArray){
         toAdd = JSON.stringify(
             [
-                ...oldListArray,
                 {
                     "url": url,
                     "questionTitle": questionTitle
-                }
+                },
+                ...oldListArray
             ]
         )
     }
@@ -44,3 +44,19 @@ button.addEventListener('click', function () {
 
 
 })
+
+
+
+
+
+chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+    const url = tabs[0].url;
+
+    if (url.includes('codeforces.com')) {
+        chrome.scripting.executeScript({
+            target: {tabId: tabs[0].id},
+            files: ['contentScript.js']
+        });
+    }
+});
+
