@@ -1,8 +1,5 @@
-# DSA Sheeter Browser Extension
-Now you can flex about your personal DSA Sheet for tech interviews.😎
-
-Feel free to get a copy of the code and run it locally.
-
+# New use cases Browser Extension
+New use cases
 
 # How to set it up locally?
 1. Get the code locally (fork and clone the repo).
@@ -14,8 +11,3 @@ Feel free to get a copy of the code and run it locally.
 
 
 Feel free to suggest any improvements or report actual issues by opening an issue.
-
-## How does it look?
-![image](https://github.com/PrgrmrHarshShukla/DSA_Sheeter/assets/125105825/06b76d71-639a-4ef8-90c3-8a6cd5448a35)
-
-
