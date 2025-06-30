@@ -13,6 +13,10 @@ const button = document.getElementById('addButton');
 button.addEventListener('click', function () {
     let oldListArray = JSON.parse(localStorage.getItem('dsaSheeterListArray'));
     
+    console.log('Old List Array:', oldListArray);
+    
+
+
     let toAdd;
     
     if(oldListArray){
