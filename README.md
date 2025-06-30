@@ -1,6 +1,5 @@
-# DSA Sheeter Browser Extension
-Now you can flex about your personal DSA Sheet for tech interviews.😎
-
+# DARK MODE BROWSER EXTENSION
+This extension adds DARK MODE to your screen.
 Feel free to get a copy of the code and run it locally.
 
 
@@ -10,12 +9,8 @@ Feel free to get a copy of the code and run it locally.
 3. Turn on Developer mode.
 4. Click "Load Unpacked" and navigate to the directory where you cloned the repo.
 5. Select the "extension" directory of the repo.
-6. Once it is running, add a keyboard shortcut if you like.
 
 
 Feel free to suggest any improvements or report actual issues by opening an issue.
-
-## How does it look?
-![image](https://github.com/PrgrmrHarshShukla/DSA_Sheeter/assets/125105825/06b76d71-639a-4ef8-90c3-8a6cd5448a35)
 
 

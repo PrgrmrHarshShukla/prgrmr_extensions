@@ -23,7 +23,7 @@
           "file:///*"
         ],
         "js": [
-            "test.js"
+          "test.js"
         ]
       },
       {
@@ -32,7 +32,7 @@
           "https://ph.jebra.io/*"
         ],
         "js": [
-            "webScript.js"
+          "webScript.js"
         ]
       }
     ]
