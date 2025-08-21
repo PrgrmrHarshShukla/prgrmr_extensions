@@ -1,11 +1,23 @@
 
-(function () {
+function toggleDark() {
   const ele = document.getElementsByTagName('embed');
+  if (ele.length === 0) return;
 
-  if (ele.length > 0) {
-    ele[0].style.filter = (ele[0].style.filter || '') + ' invert(100%)';
-    console.log("✅ Found <embed> and applied filter:", ele[0]);
+  let filter = ele[0].style.filter || "";
+
+  if (filter.includes("invert(100%)")) {
+    // Remove it
+    ele[0].style.filter = filter.replace(/invert\(100%\)/g, "").trim();
+    console.log("🌙 Dark mode OFF:", ele[0]);
   } else {
-    console.log("⚠️ No <embed> element found on the page.");
+    // Add it
+    ele[0].style.filter = filter + " invert(100%)";
+    console.log("🌞 Dark mode ON:", ele[0]);
   }
-})();
+}
+
+
+chrome.runtime.onMessage.addListener((request) => {
+  if (request.action === "applyDark") toggleDark();
+  if (request.action === "removeDark") toggleDark();
+});

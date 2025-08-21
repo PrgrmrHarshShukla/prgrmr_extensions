@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark Mode Extension</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Mode Extension</title>
+  <style>
+    #container {
+      display: flex;
+      gap: 10px;
+      padding: 10px;
+    }
+    button {
+      padding: 6px 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    #btn_on {
+      background: #222;
+      color: white;
+    }
+    #btn_off {
+      background: #eee;
+      color: black;
+    }
+    h3 {
+      margin-left: 13px;
+      margin-bottom: -2px;
+    }
+  </style>
 </head>
 <body>
-    <div>
-        This extension adds DARK MODE to your screen.
-    </div>
+  <h3>Dark Mode</h3>
+  <div id="container">
+    <button id="btn_on">TOGGLE</button>
+    <!-- <button id="btn_on">ON</button>
+    <button id="btn_off">OFF</button> -->
+  </div>
+
+  <script src="popup.js"></script>
 </body>
 </html>
