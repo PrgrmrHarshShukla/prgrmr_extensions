@@ -17,7 +17,8 @@ function toggleDark() {
 }
 
 
+toggleDark();
+
 chrome.runtime.onMessage.addListener((request) => {
-  if (request.action === "applyDark") toggleDark();
-  if (request.action === "removeDark") toggleDark();
+  toggleDark();
 });
