@@ -4,8 +4,12 @@
   "version": "1.0",
   "description": "Toggle dark mode for embeds",
   "permissions": [
+    "tabs",
     "activeTab",
     "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
   ],
   "action": {
     "default_popup": "popup.html",
